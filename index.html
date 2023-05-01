@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/weather_app.css">
+</head>
+<body>
+
+    <div class="display container d-flex justify-content-center align-items-center">
+
+        <div class="box container d-flex flex-column justify-content-center align-items-center rounded col-10 col-md-6">
+
+<div class="form-group container d-flex justify-content-between align-items-center mt-3">
+<input type="search" class="search-location form-control me-3" placeholder="search location...">
+
+<button class="btn btn-success search-button">Search</button>
+</div>
+
+<div class="weather-details container d-flex flex-column align-items-center mt-3">
+<div>
+    <h1 class="temperature mb-3" style="font-size: 40px;"></h1>
+</div>
+
+<div class="d-flex flex-column justify-content-center align-items-center">
+    <div>
+        <img src="" width="50px" alt="weather-icon" class="weather-icon">
+    </div>
+
+    <div>
+        <p class="weather-text"></p>
+    </div>
+</div>
+
+
+
+</div>
+
+<div class="wind mt-3">
+    <p>Wind Speed : <span class="wind-speed"></span></p>
+</div>
+
+<div class="location mt-3">
+    <p><i class="fa-solid fa-location-dot" style="color: #000000;"></i> <span class="current-location"></span></p>
+</div>
+
+        </div>
+
+    </div>
+
+
+    <script src="./assets/js/weather_js.js"></script>
+</body>
+</html>
