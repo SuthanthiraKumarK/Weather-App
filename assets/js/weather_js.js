@@ -24,7 +24,7 @@ const getLocation = async function() {
 
   // console.log(lat,lng);
 
-  fetch (`http://api.weatherapi.com/v1/current.json?key=71f1878f64a94dca85a102342230105&q=${lat},${lng}`).then(res=>res.json()).then(data=>{
+  fetch (`https://api.weatherapi.com/v1/current.json?key=71f1878f64a94dca85a102342230105&q=${lat},${lng}`).then(res=>res.json()).then(data=>{
 
     temp.innerHTML = `${data.current.temp_c}℃`;
     weatherIcon.setAttribute('src',`${data.current.condition.icon}`);
@@ -40,7 +40,7 @@ const search = async function (){
 
   const Location = searchLocation.value;
 
-  fetch (`http://api.weatherapi.com/v1/current.json?key=71f1878f64a94dca85a102342230105&q=${Location}`).then(res=>res.json()).then(data=>{
+  fetch (`https://api.weatherapi.com/v1/current.json?key=71f1878f64a94dca85a102342230105&q=${Location}`).then(res=>res.json()).then(data=>{
 
   temp.innerHTML = `${data.current.temp_c}℃`;
   weatherIcon.setAttribute('src',`${data.current.condition.icon}`);
