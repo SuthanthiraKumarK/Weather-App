@@ -2,7 +2,10 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
+    background-image: url(https://i.gifer.com/QlQV.gif);
+    background-size: cover;
+    backdrop-filter: blur(6px);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .display {
@@ -10,13 +13,33 @@ body {
     width: 100vw;
 }
 
+/* CURRENT WEATHER */
 .box {
-    background-image: linear-gradient(to bottom right, rgb(255, 145, 182),  rgb(255, 47, 116),  rgb(255, 145, 182));
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.600);
+    color: white;
     box-shadow: 0px 0px 15px black;
     outline: 1px solid black;
-    outline-offset: 1px;
 }
 
 .search-button {
     max-width: 150px;
+}
+
+/* FORECAST WEATHER */
+.forecast {
+    font-size: 13px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.600);
+    box-shadow: 0px 0px 15px black;
+    outline: 1px solid black;
+}
+
+.day {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.forecast-icon {
+    position: relative;
+    bottom: 8px;
 }
