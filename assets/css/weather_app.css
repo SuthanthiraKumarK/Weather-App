@@ -45,3 +45,9 @@ body {
     position: relative;
     bottom: 8px;
 }
+
+@media (min-width: 768px) {
+    .display {
+        height: 100vh;
+    }
+}
