@@ -28,11 +28,11 @@
   </head>
   <body>
     <div
-      class="display container d-flex flex-column justify-content-center align-items-center"
+      class="display container d-flex flex-column flex-md-row justify-content-center justify-content-sm-between align-items-center mt-2"
     >
       <!-- CURRENT WEATHER -->
       <div
-        class="box container d-flex flex-column justify-content-center align-items-center rounded col-md-8 col-lg-6 col-xl-5"
+        class="box container d-flex flex-column justify-content-center align-items-center rounded col-md-6 me-md-4"
       >
         <div
           class="form-group container d-flex justify-content-between align-items-center mt-3"
@@ -84,7 +84,9 @@
       </div>
 
       <!-- FORECASTING -->
-      <div class="forecast container mt-3">
+      <div
+        class="forecast container mt-3 mt-md-0 mb-2 mb-md-0 align-items-center rounded col-md-6"
+      >
         <!-- day1 -->
         <div
           class="day day1 d-flex justify-content-between align-items-center mt-3"
@@ -184,6 +186,27 @@
               src=""
               alt="forecast-icon"
               class="forecast-icon forecast-icon5"
+              width="25px"
+              height="25px"
+            />
+          </div>
+        </div>
+
+        <!-- day6 -->
+        <div
+          class="day6 d-flex justify-content-between align-items-center mt-3"
+        >
+          <div class="col-4 text-center">
+            <p class="forecast-date6"></p>
+          </div>
+          <div class="col-4 text-center">
+            <p class="forecast-temp6"></p>
+          </div>
+          <div class="col-4 text-center">
+            <img
+              src=""
+              alt="forecast-icon"
+              class="forecast-icon forecast-icon6"
               width="25px"
               height="25px"
             />

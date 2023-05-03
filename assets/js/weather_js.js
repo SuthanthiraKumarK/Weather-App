@@ -37,6 +37,7 @@ const getLocation = async function () {
       updateForecast(3, data);
       updateForecast(4, data);
       updateForecast(5, data);
+      updateForecast(6, data);
     });
 };
 
@@ -75,6 +76,7 @@ const search = async function () {
       updateForecast(3, data);
       updateForecast(4, data);
       updateForecast(5, data);
+      updateForecast(6, data);
     })
     .catch((err) => {
       temp.innerHTML = `0℃`;
